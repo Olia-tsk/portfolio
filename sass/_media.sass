@@ -30,6 +30,22 @@
   .header
     &__list
       display: none
+  .burger
+    display: flex
+    margin-left: auto
+    margin-right: 0
+    width: 30px
+    height: 20px
+    padding: 0
+    align-items: flex-start
+    flex-direction: column
+    justify-content: space-between
+    border: none
+    background-color: transparent
+    &__line
+      width: 30px
+      height: 2px
+      background-color: #fff
 
 @media (max-width: 683px)
   .header
@@ -54,11 +70,9 @@
       width: 235px
       font-size: 12px
     &__title
-      margin-bottom: 40px
+      margin: 40px 0 30px
       font-size: 35px
 
 @media (max-width: 320px)
   .header
     height: 545px
-    &__title
-      margin: 40px 0 30px
