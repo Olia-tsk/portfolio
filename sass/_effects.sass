@@ -1,0 +1,29 @@
+.header
+  &__link
+    transition: 0.5s
+    &:hover
+      color: $red
+    &:active
+      color: #ffffff
+      border-bottom: 2px solid $red
+
+.button
+  transition: 0.5s
+  &:hover
+    background-color: $red
+
+// Отключаем стили на планшетах
+@media (max-width: 768px)
+  .header
+    &__link
+      transition: 0
+      &:hover
+        color: #ffffff
+      &:active
+        color: #ffffff
+        border-bottom: none
+
+  .button
+    transition: 0
+    &:hover
+      background-color: transparent
