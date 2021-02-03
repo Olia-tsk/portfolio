@@ -2,6 +2,7 @@
   font-family: 'Mplus1p', sans-serif
   box-sizing: border-box
   transition: 0.5s
+  scroll-behavior: smooth
 
 *:focus
   outline: none
@@ -26,3 +27,42 @@ ul
   font-size: 16px
   line-height: 24px
   color: #FFFFFF
+
+.secttion-title
+  margin: 55px auto 30px auto
+  width: 220px
+  text-align: center
+  font-weight: 700
+  font-size: 34px
+  line-height: 53px
+  color: #000000
+  &::after
+    left: 0
+    right: 0
+    bottom: -5px
+    content: ''
+    display: block
+    margin-left: auto
+    margin-right: auto
+    width: 94%
+    height: 3px
+    background-color: #FC6060
+
+.subtitle
+  margin: 0
+  margin-top: 30px
+  margin-bottom: 15px
+  width: 770px
+  font-weight: 700
+  font-size: 24px
+  line-height: 42px
+  color: #000000
+
+.text
+  width: 80%
+  margin: 0
+  margin-bottom: 10px
+  font-weight: 400
+  font-size: 18px
+  line-height: 30px
+  color: #000000
