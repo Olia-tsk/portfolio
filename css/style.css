@@ -501,7 +501,7 @@ ul {
   margin-top: 15px;
 }
 
-.advantages-example__hidden {
+.advantages-example--hidden {
   display: none;
 }
 
@@ -514,7 +514,7 @@ ul {
   color: #000000;
 }
 
-.button__hide {
+.advantages-button--hidden {
   display: none;
 }
 
