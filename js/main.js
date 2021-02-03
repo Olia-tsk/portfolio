@@ -21,6 +21,28 @@ $(document).ready(function() {
         image.slideUp(500, "linear");
     }
 
+    // Увеличение картинки при клике
+    var certificate = $('.education-courses__certificate');
+
+    certificate.on('click', changeSize);
+
+    function changeSize() {
+        certificate.toggleClass('education-courses__certificate--big');
+    }
+
+    $(document).on('keydown', function(e) {
+        if (e.keyCode == 27)
+            var certificate = $('.education-courses__certificate');
+        certificate.removeClass('education-courses__certificate--big');
+    });
+
+    $(document).click(function(e) {
+        if (!$(e.target).closest(".education-courses__certificate").length) {
+            var certificate = $('.education-courses__certificate');
+            certificate.removeClass('education-courses__certificate--big');
+        };
+    });
+
     // Плавное появление кнопки to-top
     $(function() {
 

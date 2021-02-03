@@ -424,7 +424,6 @@ ul {
   margin: 0;
   margin-top: 30px;
   margin-bottom: 15px;
-  width: 770px;
   font-weight: 700;
   font-size: 24px;
   line-height: 42px;
@@ -439,6 +438,10 @@ ul {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+}
+
+.text--mb-zero {
+  margin-bottom: 0;
 }
 
 .to-top {
@@ -461,8 +464,8 @@ ul {
 }
 
 .to-top-icon {
-  width: 22px;
-  height: 20px;
+  width: 15px;
+  height: 10px;
   fill: #ffffff;
   transform: rotate(180deg);
 }
@@ -537,11 +540,47 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  color: #000000;
+  color: #FC6060;
 }
 
 .advantages-button--hidden {
   display: none;
+}
+
+.education-courses {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.education-courses__text {
+  width: 80%;
+}
+
+.education-courses__skills-list {
+  margin-left: 17px;
+  margin-bottom: 10px;
+  list-style-type: "> ";
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.education-courses__certificate {
+  margin-left: 10px;
+  width: 28%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.education-courses__certificate--big {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: -40%;
+  transform: translateX(-50%);
 }
 
 @media (max-width: 1200px) {
