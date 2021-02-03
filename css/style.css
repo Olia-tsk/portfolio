@@ -441,6 +441,32 @@ ul {
   color: #000000;
 }
 
+.to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 50;
+  display: flex;
+  background-color: #FC6060;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  width: 40px;
+  height: 40px;
+}
+
+.to-top--hidden {
+  display: none;
+}
+
+.to-top-icon {
+  width: 22px;
+  height: 20px;
+  fill: #ffffff;
+  transform: rotate(180deg);
+}
+
 .header {
   height: 753px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/main-bg.jpeg) center/cover no-repeat;

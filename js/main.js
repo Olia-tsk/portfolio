@@ -20,4 +20,26 @@ $(document).ready(function() {
         btnHide.addClass('advantages-button--hidden');
         image.slideUp(500, "linear");
     }
+
+    // Плавное появление кнопки to-top
+    $(function() {
+
+        //scroll to top
+        $('.to-top').click(function() {
+            $('html, body').animate({ scrollTop: 0 }, 500);
+            return false;
+        });
+
+
+        //show up-button
+        $(document).scroll(function() {
+            var y = $(this).scrollTop();
+            if (y > 800) {
+                $('.to-top').removeClass('to-top--hidden');
+            } else {
+                $('.to-top').addClass('to-top--hidden');
+            }
+        });
+
+    });
 });

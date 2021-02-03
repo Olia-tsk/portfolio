@@ -66,3 +66,24 @@ ul
   font-size: 18px
   line-height: 30px
   color: #000000
+
+.to-top
+  position: fixed
+  right: 20px
+  bottom: 20px
+  z-index: 50
+  display: flex
+  background-color: $red
+  border-radius: 50%
+  align-items: center
+  justify-content: center
+  opacity: 0.8
+  width: 40px
+  height: 40px
+  &--hidden
+    display: none
+  &-icon
+    width: 22px
+    height: 20px
+    fill: #ffffff
+    transform: rotate(180deg)
