@@ -27,7 +27,9 @@ $(document).ready(function() {
     certificate.on('click', changeSize);
 
     function changeSize() {
-        certificate.toggleClass('education-courses__certificate--big');
+        if (screen.width > 576) {
+            certificate.toggleClass('education-courses__certificate--big');
+        }
     }
 
     $(document).on('keydown', function(e) {
@@ -52,7 +54,6 @@ $(document).ready(function() {
             return false;
         });
 
-
         //show up-button
         $(document).scroll(function() {
             var y = $(this).scrollTop();
@@ -62,6 +63,7 @@ $(document).ready(function() {
                 $('.to-top').addClass('to-top--hidden');
             }
         });
-
     });
+
+
 });

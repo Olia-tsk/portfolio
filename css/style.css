@@ -397,7 +397,7 @@ ul {
   color: #FFFFFF;
 }
 
-.secttion-title {
+.section-title {
   margin: 55px auto 30px auto;
   width: 220px;
   text-align: center;
@@ -407,7 +407,7 @@ ul {
   color: #000000;
 }
 
-.secttion-title::after {
+.section-title::after {
   left: 0;
   right: 0;
   bottom: -5px;
@@ -579,8 +579,8 @@ ul {
   position: absolute;
   width: 50%;
   left: 50%;
-  top: -40%;
-  transform: translateX(-50%);
+  top: 20%;
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 1200px) {
@@ -620,6 +620,27 @@ ul {
     font-size: 12px;
     padding: 10px 25px;
   }
+  .section-title {
+    width: 183px;
+    margin-top: 45px;
+    font-size: 28px;
+    line-height: 47px;
+  }
+  .subtitle {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 21px;
+    line-height: 33px;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .education-courses__skills-list {
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 27px;
+  }
 }
 
 @media (max-width: 745px) {
@@ -655,6 +676,30 @@ ul {
     margin-top: 90px;
     font-size: 40px;
   }
+  .section-title {
+    width: 145px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    font-size: 22px;
+    line-height: 40px;
+  }
+  .subtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .text {
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .advantages-example {
+    width: 100%;
+  }
+  .education-courses__skills-list {
+    margin-left: 13px;
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -668,6 +713,17 @@ ul {
     font-size: 12px;
     line-height: 22px;
   }
+  .education-courses {
+    flex-direction: column;
+  }
+  .education-courses__text {
+    width: 100%;
+  }
+  .education-courses__certificate {
+    margin-left: 0;
+    margin-bottom: 10px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 460px) {
@@ -676,8 +732,39 @@ ul {
     font-size: 12px;
   }
   .header__title {
+    width: 70%;
     margin: 40px 0 30px;
     font-size: 35px;
+  }
+  .section-title {
+    width: 130px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 31px;
+  }
+  .subtitle {
+    margin-top: 20px;
+    margin-bottom: 7px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .text {
+    margin-bottom: 6px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .text--mb-zero {
+    margin-bottom: 0;
+  }
+  .advantages-button {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .education-courses__skills-list {
+    margin-left: 11px;
+    font-size: 12px;
+    line-height: 20px;
   }
 }
 
