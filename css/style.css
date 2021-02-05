@@ -583,6 +583,10 @@ ul {
   transform: translate(-50%, -50%);
 }
 
+.portfolio {
+  padding-bottom: 50px;
+}
+
 .portfolio-title {
   width: 415px;
 }
@@ -634,8 +638,23 @@ ul {
   text-align: right;
 }
 
+.contacts {
+  padding-top: 35px;
+  padding-bottom: 60px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .contacts-title {
-  width: 360px;
+  margin: 0;
+  margin-bottom: 25px;
+  width: 100%;
+  text-align: left;
+}
+
+.contacts-title::after {
+  content: '';
+  width: 0;
+  height: 0;
 }
 
 .contacts-links {
@@ -667,7 +686,7 @@ ul {
 
 .contacts-resume {
   display: block;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 27px;
   font-weight: 700;
@@ -887,7 +906,7 @@ ul {
 }
 
 .advantages-button:hover {
-  color: #FC6060;
+  color: #000000;
 }
 
 .portfolio-item__link:hover {
@@ -932,7 +951,7 @@ ul {
     background-color: transparent;
   }
   .advantages-button:hover {
-    color: #000000;
+    color: #FC6060;
   }
   .portfolio-item__link:hover {
     color: #000000;
