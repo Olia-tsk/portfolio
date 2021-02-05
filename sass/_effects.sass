@@ -17,11 +17,33 @@
     &:hover
       color: $red
 
+.portfolio
+  &-item
+    &__link
+      &:hover
+        color: $red
+      &:active
+        border-bottom: 1px solid #000000
+
+.contacts
+  &-links
+    &__icon
+      transition: 0s
+      &:hover
+        fill: $red
+  &-resume
+    &:hover
+      color: $red
+
+.to-top
+  &:hover
+    background-color: #000000
+
 // Отключаем стили на планшетах
 @media (max-width: 768px)
   .header
     &__link
-      transition: 0
+      transition: 0s
       &:hover
         color: #ffffff
       &:active
@@ -29,11 +51,29 @@
         border-bottom: none
 
   .button
-    transition: 0
+    transition: 0s
     &:hover
       background-color: transparent
 
   .advantages
-  &-button
+    &-button
+      &:hover
+        color: #000000
+
+  .portfolio
+    &-item
+      &__link
+        &:hover
+          color: #000000
+        &:active
+          border-bottom: none
+
+  .contacts
+    &-links
+      &__icon
+        transition: 0s
+        &:hover
+          fill: #000000
+  .to-top
     &:hover
-      color: #000000
+      background-color: $red
