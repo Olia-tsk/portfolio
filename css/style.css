@@ -583,6 +583,57 @@ ul {
   transform: translate(-50%, -50%);
 }
 
+.portfolio-title {
+  width: 415px;
+}
+
+.portfolio-item__title {
+  line-height: 36px;
+}
+
+.portfolio-item__subtitle {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.portfolio-item__subtitle--s {
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.portfolio-item__work-list {
+  margin-left: 20px;
+}
+
+.portfolio-item__link {
+  font-size: 14px;
+  line-height: 21px;
+  color: inherit;
+}
+
+.portfolio-item__number {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.portfolio-item__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-item__left-col {
+  max-width: 700px;
+}
+
+.portfolio-item__right-col {
+  max-width: 316px;
+  text-align: right;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 90%;

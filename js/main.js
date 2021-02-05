@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // Показать-скрыть пример
-    var btnShow = $('.button__show');
-    var btnHide = $('.button__hide');
+    var btnShow = $('.button-show');
+    var btnHide = $('.button-hide');
     var image = $('.advantages-example');
 
     btnShow.on('click', showImage);
