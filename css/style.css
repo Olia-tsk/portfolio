@@ -604,6 +604,7 @@ ul {
 }
 
 .portfolio-item__subtitle--s {
+  margin-top: 15px;
   margin-bottom: 5px;
   font-size: 16px;
   line-height: 24px;
@@ -624,13 +625,9 @@ ul {
   line-height: 21px;
 }
 
-.portfolio-item__description {
+.portfolio-item__media {
   display: flex;
   justify-content: space-between;
-}
-
-.portfolio-item__left-col {
-  max-width: 700px;
 }
 
 .portfolio-item__right-col {
