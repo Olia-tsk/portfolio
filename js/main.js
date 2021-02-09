@@ -1,4 +1,28 @@
 $(document).ready(function() {
+    // Активируем кнопку меню
+    var burger = document.querySelector('.burger');
+
+    burger.addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('.header__list').classList.toggle('header__list--mobile-visible');
+        document.querySelector('.header-nav').classList.toggle('header-nav--bg--dark');
+    });
+
+
+
+    $('.header__link').on('click', function() {
+        if (screen.width < 746) {
+            document.querySelector('.header__list').classList.toggle('header__list--mobile-visible');
+            document.querySelector('.header-nav').classList.toggle('header-nav--bg--dark');
+        }
+    });
+
+
+    // $('.header__link').on('click', function() {
+    //     document.querySelector('.header__list').classList.toggle('header__list--mobile-visible');
+    //     document.querySelector('.header-nav').classList.toggle('header-nav--bg--dark');
+    // });
+
     // Показать-скрыть пример
     var btnShow = $('.button-show');
     var btnHide = $('.button-hide');
