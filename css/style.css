@@ -805,7 +805,7 @@ ul {
     justify-content: flex-start;
     z-index: 80;
   }
-  .header-nav__mobile--fixed {
+  .header-nav__mobile-fixed {
     position: fixed;
     left: 0;
     top: 0;
