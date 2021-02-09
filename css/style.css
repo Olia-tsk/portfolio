@@ -627,12 +627,18 @@ ul {
 
 .portfolio-item__media {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
 .portfolio-item__right-col {
-  max-width: 316px;
+  margin-left: 35px;
+  max-width: 30%;
   text-align: right;
+}
+
+.portfolio-item__video {
+  width: 70%;
 }
 
 .contacts {
@@ -748,6 +754,27 @@ ul {
     font-size: 16px;
     line-height: 27px;
   }
+  .portfolio-title {
+    width: 340px;
+  }
+  .portfolio-item__media {
+    flex-direction: column;
+  }
+  .portfolio-item__video {
+    width: 100%;
+  }
+  .portfolio-item__right-col {
+    margin-left: 0;
+    max-width: 100%;
+    text-align: left;
+  }
+  .contacts {
+    padding-top: 25px;
+  }
+  .contacts-title {
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 745px) {
@@ -807,6 +834,52 @@ ul {
     font-size: 14px;
     line-height: 24px;
   }
+  .portfolio {
+    padding-bottom: 40px;
+  }
+  .portfolio-title {
+    width: 270px;
+  }
+  .portfolio-item__subtitle {
+    margin-top: 15px;
+    font-size: 17px;
+    line-height: 27px;
+  }
+  .portfolio-item__subtitle--s {
+    font-size: 14px;
+  }
+  .contacts {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .contacts-title {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .contacts-links {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .contacts-links__link {
+    margin-right: 25px;
+  }
+  .contacts-links__icon {
+    width: 45px;
+    height: 45px;
+  }
+  .contacts-links__icon--gmail {
+    width: 42px;
+    height: 42px;
+  }
+  .contacts-links__icon--phone {
+    width: 40px;
+    height: 40px;
+  }
+  .contacts-resume {
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -830,6 +903,9 @@ ul {
     margin-left: 0;
     margin-bottom: 10px;
     width: 100%;
+  }
+  .portfolio {
+    padding-bottom: 30px;
   }
 }
 
@@ -872,6 +948,52 @@ ul {
     margin-left: 11px;
     font-size: 12px;
     line-height: 20px;
+  }
+  .portfolio {
+    padding-bottom: 20px;
+  }
+  .portfolio-title {
+    width: 240px;
+  }
+  .portfolio-item__subtitle {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .portfolio-item__link {
+    font-size: 12px;
+  }
+  .portfolio-item__number {
+    font-size: 12px;
+  }
+  .portfolio-item__work-list {
+    width: 90%;
+  }
+  .contacts {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .contacts-title {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .contacts-links__link {
+    margin-right: 20px;
+  }
+  .contacts-links__icon {
+    width: 40px;
+    height: 40px;
+  }
+  .contacts-links__icon--gmail {
+    width: 37px;
+    height: 37px;
+  }
+  .contacts-links__icon--phone {
+    width: 35px;
+    height: 35px;
+  }
+  .contacts-resume {
+    font-size: 14px;
   }
 }
 
